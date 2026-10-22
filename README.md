@@ -4,7 +4,9 @@ Dashboard nativo para Linux/Hyprland, construido con Qt Quick y un backend Pytho
 Incluye reloj, clima, recursos, temperaturas, actividad, aplicaciones, refrigeración
 e iluminación física mediante OpenRGB.
 
-![Panel de iluminación](docs/iluminacion.png)
+![Vista completa de Unix Dashboard](docs/dashboard.png)
+
+*Captura de la interfaz con datos de ejemplo y sin servicios de hardware.*
 
 ## Estado
 
@@ -72,6 +74,15 @@ systemctl --user start game-wallpaper-pause.service
 
 Añadir ese comando al inicio de la sesión si se quiere ejecución automática.
 Los vídeos de wallpaper no se incluyen: deben elegirse por separado en Aura.
+
+## Regenerar la captura
+
+```bash
+QT_QPA_PLATFORM=offscreen QT_QUICK_BACKEND=software \
+  /usr/lib/qt6/bin/qmltestrunner -input docs/preview -o -,txt
+```
+
+Usa datos simulados; no lee tu historial ni aplica cambios al hardware.
 
 ## Pruebas
 
