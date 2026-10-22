@@ -1,0 +1,7 @@
+[Unit]
+Description=OpenRGB local controller for Unix Dashboard
+
+[Service]
+ExecStart=/usr/bin/openrgb --noautoconnect --server --server-host 127.0.0.1 --server-port 6743
+Restart=on-failure
+RestartSec=3

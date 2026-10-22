@@ -1,0 +1,7 @@
+[Unit]
+Description=Pause Aura wallpapers while games are open in Hyprland
+
+[Service]
+ExecStart=/usr/bin/python3 %h/.local/bin/game-wallpaper-pause
+Restart=on-failure
+RestartSec=5

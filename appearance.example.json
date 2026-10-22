@@ -1,0 +1,11 @@
+{
+  "theme": "Obsidiana",
+  "refreshInterval": 1000,
+  "lightningEnabled": true,
+  "backgroundOpacity": 0.9,
+  "cardOpacity": 0.7,
+  "fanMode": "Automático",
+  "fanBoost": false,
+  "fanChannels": [],
+  "fanGPU": false
+}

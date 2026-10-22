@@ -1,0 +1,14 @@
+{
+  "logo": { "type": "none" },
+  "display": { "separator": " › " },
+  "modules": [
+    { "type": "os", "key": "OS" },
+    { "type": "kernel", "key": "Kernel" },
+    { "type": "uptime", "key": "Uptime" },
+    { "type": "wm", "key": "WM" },
+    { "type": "cpu", "key": "CPU", "format": "{name}" },
+    { "type": "gpu", "key": "GPU", "format": "{name}" },
+    { "type": "memory", "key": "RAM" },
+    { "type": "disk", "key": "Root", "folders": "/" }
+  ]
+}
